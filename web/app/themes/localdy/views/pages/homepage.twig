@@ -1,0 +1,25 @@
+{% extends "layouts/base.twig" %}
+
+{# web/app/themes/localdy/views/pages/homepage.twig #}
+
+
+{% block content %}
+  {% set hp = post.meta('homepage') %}
+
+
+    <pre>
+    {{ dump(post.meta) }}
+    </pre>
+
+
+  <section class="hero">
+    {# <h2>{{ hp.title }}</h2> #}
+    <h2>{{ post.meta.title }}</h2>
+
+    {# <p>{{ hp.content }}</p> #}
+    <p>{{ post.meta.content }}</p>
+
+  </section>
+
+  <p>Test homepage bo avec permalien ici 20251022 18h27</p>
+{% endblock %}
