@@ -66,3 +66,19 @@ add_action('init', function () {
   ]);
 });
 
+// Charger le CSS/JS du thème
+add_action('wp_enqueue_scripts', function () {
+  $dir = get_stylesheet_directory();
+  $uri = get_stylesheet_directory_uri();
+
+  // CSS compilé par Sass : web/app/themes/localdy/static/css/app.css
+  $css = $dir . '/static/css/app.css';
+  if (file_exists($css)) {
+    wp_enqueue_style(
+      'localdy-app',
+      $uri . '/static/css/app.css',
+      [],
+      filemtime($css) // cache-busting
+    );
+  }
+}, 20); // ← ferme bien le hook et ajoute une priorité
