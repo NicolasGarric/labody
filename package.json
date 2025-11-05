@@ -1,0 +1,11 @@
+{
+  "name": "labody",
+  "private": true,
+  "scripts": {
+    "dev": "sass web/app/themes/localdy/static/scss/app.scss:web/app/themes/localdy/static/css/app.css --style=expanded --watch",
+    "build": "sass web/app/themes/localdy/static/scss/app.scss:web/app/themes/localdy/static/css/app.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.79.0"
+  }
+}

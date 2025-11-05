@@ -1,24 +1,29 @@
 <!doctype html>
 <html {{ function('language_attributes') }}>
 <head>
-  <meta charset="{{ function('bloginfo', 'charset') }}" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {{ function('wp_head') }}
+    <meta charset="{{ function('bloginfo', 'charset') }}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {{ function('wp_head') }}
 </head>
 <body {{ function('body_class') }}>
-  <header>
-    <h1>{{ site.name }}</h1>
-    <p>{{ site.description }}</p>
-  </header>
+    <header class="header">
+        <h1>{{ site.name }}</h1>
+        <p>{{ site.description }}</p>
 
-  <main>
-    {% block content %}{% endblock %}
-  </main>
+        <div class="header__container">
+            <p>test header part</p>
+        </div>
+    </header>
 
-  <footer>
-    <small>&copy; {{ "now"|date("Y") }} — Local D&Y</small>
-  </footer>
+    <footer class="footer">
 
-  {{ function('wp_footer') }}
+        <div class="header__container">
+            <p>test footer part</p>
+        </div>
+
+        <small>&copy; {{ "now"|date("Y") }} — Local D&Y</small>
+    </footer>
+
+    {{ function('wp_footer') }}
 </body>
 </html>

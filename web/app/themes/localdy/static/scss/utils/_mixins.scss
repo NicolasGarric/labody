@@ -1,0 +1,205 @@
+@use "colors";
+@use "variables";
+
+// web/app/themes/localdy/static/scss/utils/_mixins.scss
+
+// RESPONSIVE
+@mixin mobile {
+    @media (min-width: #{variables.$mobile-width}) and (max-width: #{variables.$desktop-width - 1px}) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: #{variables.$desktop-width}) {
+        @content;
+    }
+}
+
+// FONTS
+@mixin display {
+    color: variables.$blue;
+
+    /* Display */
+    font-family: "BjorgAlive";
+    font-size: 5.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 48.4px */
+    text-transform: uppercase;
+}
+
+
+// Test
+@mixin container-test {
+  display: flex;
+
+  background-color: red;
+  height: 10rem;
+  width: 10rem;
+}
+
+
+@mixin heading-1 {
+    color: variables.$blue;
+
+    /* Heading 1 */
+    font-family: "BjorgAlive";
+    font-size: 3.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 37.4px */
+    text-transform: uppercase;
+}
+
+@mixin heading-2 {
+    color: variables.$blue;
+
+    /* Heading 2 */
+    font-family: "BjorgAlive";
+    font-size: 2.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 30.8px */
+    text-transform: uppercase;
+}
+
+@mixin heading-3 {
+    color: variables.$blue;
+
+    /* Heading 3 */
+    font-family: "Dazzed";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 26.4px */
+}
+
+@mixin heading-4 {
+    color: variables.$blue;
+
+    /* Heading 4 */
+    font-family: "BjorgAlive";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 17.6px */
+    letter-spacing: 0px;
+    text-transform: uppercase;
+}
+
+@mixin body-1 {
+    color: variables.$blue;
+
+    /* Body 1 */
+    font-family: "Dazzed";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 19.8px */
+}
+
+@mixin body-1-md {
+    color: variables.$blue;
+
+    /* Body 1 */
+    font-family: "Dazzed";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%; /* 19.8px */
+}
+
+@mixin body-1-bold {
+    color: variables.$blue;
+
+    /* Body 1 */
+    font-family: "Dazzed";
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 19.8px */
+}
+
+@mixin body-2 {
+    color: variables.$blue;
+
+    /* Body 2 */
+    font-family: "Dazzed";
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 450;
+    line-height: 110%; /* 17.6px */
+}
+
+@mixin ui-1 {
+    color: variables.$blue;
+    font-family: "BjorgAlive";
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 15.2px */
+    letter-spacing: 0;
+    text-transform: uppercase;
+}
+
+@mixin ui-2 {
+    color: variables.$blue;
+
+    /* UI 2 */
+    font-family: "Dazzed";
+    font-size: 1.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 13.2px */
+}
+
+// ########## TO REMOVE
+@mixin ui-3 {
+    // TO REMOVE
+    color: variables.$blue;
+
+    /* UI 2 */
+    font-family: "Dazzed";
+    font-size: 1.4em;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 110%; /* 13.2px */
+}
+
+
+@mixin btn--gradient {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1.6rem;
+    gap: 1rem;
+
+    border-radius: 1.2rem;
+    background: variables.$yellow;
+
+    /* Degradé */
+    box-shadow: 0px -2px 0px 1px rgb(255, 193, 0) inset,
+        0px -4px 0px 2px rgb(255, 214, 0) inset,
+        0px -7px 0px 3px rgb(255, 228, 0) inset;
+
+    span {
+        color: variables.$blue;
+        @include ui-1;
+    }
+
+    svg {
+        color: variables.$blue;
+
+        width: 0.6rem;
+        height: 0.7rem;
+    }
+}
+
+@mixin yellow--gradient{
+    background: variables.$yellow;
+
+    /* Degradé */
+    box-shadow: 0px -2px 0px 1px rgb(255, 193, 0) inset, 0px -4px 0px 2px rgb(255, 214, 0) inset, 0px -7px 0px 3px rgb(255, 228, 0) inset;
+}
