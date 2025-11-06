@@ -1,6 +1,19 @@
+// web/app/themes/localdy/static/scss/app.scss
+
 @use 'sass:math';
-@use './utils/mixins';
-@import 'utils/global-import';
+@use 'utils/index' as *;     // expose colors, variables, reset, fonts
+@use 'utils/mixins' as mixins;
+
+
+@use '../../views/layouts/base';
+
+
+
+// exemple d’utilisation des mixins:
+@include mixins.mobile {
+  /* css mobile */
+}
+
 
 html {
     font-size: #{math.div(1000 , $desktop-mockup-width)}vw;
