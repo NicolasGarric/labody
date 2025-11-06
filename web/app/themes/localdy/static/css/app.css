@@ -27,21 +27,19 @@ button {
 }
 
 .header {
-  margin-top: 5rem;
-}
-.header__container {
-  margin-top: 10rem;
-  padding-top: 50px;
   display: flex;
-  background-color: red;
+  flex-direction: column;
+  background: beige;
   height: 10rem;
-  width: 10rem;
-}
-.header__container p {
-  color: #13A538;
-}
-.header__container {
+  width: 15rem;
   color: red;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  color: blue;
+  background-color: red;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {

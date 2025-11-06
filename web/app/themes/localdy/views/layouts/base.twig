@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {{ function('wp_head') }}
 </head>
+
 <body {{ function('body_class') }}>
+
     <header class="header">
         <h1>{{ site.name }}</h1>
         <p>{{ site.description }}</p>
@@ -24,6 +26,6 @@
         <small>&copy; {{ "now"|date("Y") }} — Local D&Y</small>
     </footer>
 
-    {{ function('wp_footer') }}
+    {# {{ function('wp_footer') }} #}
 </body>
 </html>

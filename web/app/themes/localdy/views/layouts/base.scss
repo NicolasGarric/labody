@@ -13,22 +13,26 @@
 
 
 .header {
-    margin-top: 5rem;
-    
-    &__container {
-        margin-top: 10rem;
-        padding-top: 50px;
-        @include mixins.container-test;
 
-        p {
-            color: variables.$green;
-        }
+    display: flex;
+    flex-direction: column;
 
-        color: red;
+    background: beige;
+    height: 10rem;
+    width: 15rem;
 
-    }
+    color: red;
+
 }
 
 .footer {
+
+    display: flex;
+    flex-direction: column;
+
+    color: blue;
+    background-color: red;
+
+
 
 }

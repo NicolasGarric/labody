@@ -30,16 +30,6 @@
 }
 
 
-// Test
-@mixin container-test {
-    display: flex;
-
-    background-color: red;
-    height: 10rem;
-    width: 10rem;
-}
-
-
 @mixin heading-1 {
     color: variables.$blue;
 
