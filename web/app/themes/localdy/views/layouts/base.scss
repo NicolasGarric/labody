@@ -6,9 +6,16 @@
 
 .header {
     display: flex;
-    margin-top: 2rem;
+    align-items: center;
+    margin: 2rem 0rem;
 
-    color: red;
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        margin: 0rem 10rem;
+    }
 }
 
 .footer {

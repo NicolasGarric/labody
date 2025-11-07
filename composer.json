@@ -41,7 +41,9 @@
     "roots/wp-config": "1.0.0",
     "wpackagist-theme/twentytwentyfive": "^1.0",
     "timber/timber": "^2.0",
-    "wpackagist-plugin/advanced-custom-fields": "^6.3"
+    "wpackagist-plugin/advanced-custom-fields": "^6.6",
+    "wpackagist-plugin/wordpress-seo": "^26.3",
+    "wpackagist-plugin/contact-form-7": "^6.1"
   },
   "require-dev": {
     "roave/security-advisories": "dev-latest",
