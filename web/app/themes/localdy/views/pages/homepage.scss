@@ -1,0 +1,15 @@
+// web/app/themes/localdy/views/pages/homepage.scss
+
+@use '../../static/scss/utils/variables';
+@use '../../static/scss/utils/mixins';
+
+.homepage {
+    display: flex;
+    flex-direction: column;
+
+    background: greenyellow;
+    color: red;
+
+    height: 50rem;
+    width: 100%;
+}

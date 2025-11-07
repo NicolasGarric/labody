@@ -1,6 +1,8 @@
 <?php
 use Timber\Timber;
 
+// web/app/themes/localdy/single-homepage.php
+
 $context         = Timber::context();
 $context['post'] = Timber::get_post();               // ← l’item CPT courant
 $overrides       = $context['post']->meta('homepage') ?: [];

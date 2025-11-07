@@ -5,7 +5,9 @@
 @use 'utils/mixins' as mixins;
 
 
+// Mettre ici toutes les pages que je vais utiliser
 @use '../../views/layouts/base';
+@use '../../views/pages/homepage';
 
 
 

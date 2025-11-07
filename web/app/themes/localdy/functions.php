@@ -2,6 +2,8 @@
 use Timber\Timber;
 use Timber\Site;
 
+// web/app/themes/localdy/functions.php
+
 if ( ! class_exists( \Timber\Timber::class ) ) {
   add_action('admin_notices', function() {
     echo '<div class="error"><p>Timber n’est pas chargé. Assure-toi d’avoir installé timber/timber via Composer.</p></div>';

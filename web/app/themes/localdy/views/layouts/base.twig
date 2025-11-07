@@ -1,31 +1,44 @@
 <!doctype html>
+
+{# web/app/themes/localdy/views/layouts/base.twig #}
+
 <html {{ function('language_attributes') }}>
 <head>
-    <meta charset="{{ function('bloginfo', 'charset') }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    {{ function('wp_head') }}
+  <meta charset="{{ function('bloginfo','charset') }}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  {{ function('wp_head') }}
 </head>
+
 
 <body {{ function('body_class') }}>
 
+    {# Header #}
     <header class="header">
         <h1>{{ site.name }}</h1>
         <p>{{ site.description }}</p>
 
         <div class="header__container">
             <p>test header container part</p>
+            <p>Header fin</p>
+            <p>////////</p>
         </div>
     </header>
 
+    {# Content #}
+    <main id="main">
+        {% block content %}{% endblock %}
+    </main>
+
+    {# Footer #}
     <footer class="footer">
-
         <div class="header__container">
-            <p>test footer part</p>
+            <p>//////</p>
+            <p>Fotter start</p>
+            <p>Fotter</p>
         </div>
-
         <small>&copy; {{ "now"|date("Y") }} — Local D&Y</small>
     </footer>
 
-    {# {{ function('wp_footer') }} #}
+    {{ function('wp_footer') }}
 </body>
 </html>

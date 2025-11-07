@@ -1,6 +1,7 @@
 <?php
 /**
  * Template Name: Homepage
+ * web/app/themes/localdy/homepage.php
  */
 use Timber\Timber;
 
@@ -23,7 +24,7 @@ $hp = Timber::get_posts([
 
 $overrides = [];
 if (!empty($hp)) {
-  $context['post'] = $hp[0];              
+  $context['post'] = $hp[0];
   $overrides = $hp[0]->meta('homepage') ?: [];
 }
 

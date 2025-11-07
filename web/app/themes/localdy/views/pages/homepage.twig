@@ -1,25 +1,26 @@
+{# web/app/themes/localdy/views/pages/homepage.twig #}
 {% extends "layouts/base.twig" %}
 
-{# web/app/themes/localdy/views/pages/homepage.twig #}
 
 
 {% block content %}
-  {% set hp = post.meta('homepage') %}
 
+    <pre>{{ dump(post.meta) }}</pre>
 
-    <pre>
-    {{ dump(post.meta) }}
-    </pre>
+    <section class="homepage">
+        <h2>{{ post.meta.title }}</h2>
+        <h2></h2>
 
+        {# <img
+            class=""
+            src="{{ post.meta.header_image.url }}"
+            alt="{{ post.meta.title }}"
+        /> #}
 
-  <section class="hero">
-    {# <h2>{{ hp.title }}</h2> #}
-    <h2>{{ post.meta.title }}</h2>
+        {% set id = post.meta('header_image') %}
+        {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
 
-    {# <p>{{ hp.content }}</p> #}
-    <p>{{ post.meta.content }}</p>
+        <p>{{ post.meta.content }}</p>
+    </section>
 
-  </section>
-
-  <p>Test homepage bo avec permalien ici 20251022 18h27</p>
 {% endblock %}

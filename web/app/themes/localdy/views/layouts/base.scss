@@ -3,36 +3,16 @@
 // J'aimerai modificer cette adresse avec le '@use'
 @use '../../static/scss/utils/mixins';
 
-// Voici l'adresse actuelle de mes mixins
-// web/app/themes/localdy/static/scss/utils/_mixins.scss
-
-// Voici l'adresse ou je suis
-// web/app/themes/localdy/views/layouts/base.scss
-
-// Explique moi ta façon de préocéder
-
 
 .header {
-
     display: flex;
-    flex-direction: column;
-
-    background: beige;
-    height: 10rem;
-    width: 15rem;
+    margin-top: 2rem;
 
     color: red;
-
 }
 
 .footer {
-
     display: flex;
     flex-direction: column;
-
-    color: blue;
-    background-color: red;
-
-
-
+    color: green;
 }

@@ -29,17 +29,29 @@ button {
 .header {
   display: flex;
   flex-direction: column;
-  background: beige;
-  height: 10rem;
-  width: 15rem;
+  margin-top: 2rem;
   color: red;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  color: blue;
-  background-color: red;
+  color: green;
+}
+
+.homepage {
+  display: flex;
+  flex-direction: column;
+  background: greenyellow;
+  color: red;
+}
+
+.homepage h2 {
+  color: aqua;
+}
+
+.homepage p {
+  color: pink;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -107,4 +119,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=app.css.map */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACrBJ;EACI;EACA;EACA;EAEA;;;AAGJ;EACI;EACA;EACA;;;ACZJ;EACE;EACA;EAEA;EACA;;;AAGF;EACE;;;AAGF;EACE;;;ACXE;ACQF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;ADxBJ;ECYJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
