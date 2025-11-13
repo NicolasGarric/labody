@@ -4,23 +4,42 @@
 
 
 {% block content %}
-
     {# <pre>{{ dump(post.meta) }}</pre> #}
 
+
     <section class="homepage">
-        <h2>{{ post.meta.title }}</h2>
-        <h2></h2>
 
-        {# <img
-            class=""
-            src="{{ post.meta.header_image.url }}"
-            alt="{{ post.meta.title }}"
-        /> #}
+        {# Header - Image & Main Title #}
+        <div class="homepage__header">
 
-        {% set id = post.meta('header_image') %}
-        {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
+            <div class="homepage__header__title">
+                <h1>{{ post.meta.title }}</h1>
+            </div>
 
-        <p>{{ post.meta.content }}</p>
+            <div class="homepage__header__img">
+                {% set id = post.meta('header_image') %}
+                {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
+            </div>
+        </div>
+
+        {# Presentation - Content #}
+        <div class="homepage__presentation">
+            <p>{{ post.meta.content }}</p>
+        </div>
+
+        {# Location - Map #}
+        <div class="homepage__location">
+            <div class="homepage__location__map">
+
+            </div>
+        </div>
+
+        {# Contact #}
+        <div class="homepage__contact">
+            <div class="homepage__contact__form">
+            </div>
+        </div>
+
     </section>
 
 {% endblock %}

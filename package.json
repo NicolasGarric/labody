@@ -2,7 +2,7 @@
   "name": "labody",
   "private": true,
   "scripts": {
-    "dev": "sass --watch web/app/themes/localdy/static/scss/app.scss:web/app/themes/localdy/static/css/app.css --style=expanded --embed-source-map --poll --load-path=web/app/themes/localdy",
+    "dev": "sass --watch --poll --embed-source-map --quiet-deps --load-path web/app/themes/localdy/views --load-path web/app/themes/localdy/static/scss web/app/themes/localdy/static/scss/app.scss:web/app/themes/localdy/static/css/app.css --style=expanded",
     "build": "sass web/app/themes/localdy/static/scss/app.scss:web/app/themes/localdy/static/css/app.css --style=compressed"
   },
   "devDependencies": {

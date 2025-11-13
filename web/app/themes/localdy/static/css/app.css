@@ -35,22 +35,91 @@ button {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  margin: 0rem 10rem;
+  margin: 2rem 10rem;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: 100;
 }
 
 .footer {
   display: flex;
   flex-direction: column;
-  color: green;
+  align-items: center;
+  margin-bottom: 2rem;
+  color: red;
 }
 
 .homepage {
   display: flex;
   flex-direction: column;
-  margin: 5rem 0rem;
-  height: 50rem;
-  background-color: aqua;
+  height: auto;
   width: 100%;
+  margin: 5rem 0rem;
+}
+.homepage__header {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.homepage__header__title {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+}
+.homepage__header__title h1 {
+  color: red;
+}
+.homepage__header__img {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 5;
+  top: 0rem;
+  left: 0rem;
+}
+.homepage__header__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+.homepage__presentation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+.homepage__location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2rem;
+}
+.homepage__location__map {
+  background-color: antiquewhite;
+  width: 50rem;
+  height: 40rem;
+}
+.homepage__contact {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.homepage__contact__form {
+  display: flex;
+  flex-direction: column;
+  width: 30rem;
+  height: 40rem;
+  background-color: aquamarine;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -118,4 +187,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACrBJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;;;AAIR;EACI;EACA;EACA;;;AClBJ;EACI;EACA;EAEA;EAEA;EACA;EACA;;;ACNA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACrBJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EAEA;EACA;EACA;EACA;;;AAKR;EACI;EACA;EAEA;EACA;EACA;;;AC3BJ;EACI;EACA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAKZ;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;;AAIR;EACI;EAEA;EACA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EACA;;;ACpFR;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
