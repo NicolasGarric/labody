@@ -13,7 +13,7 @@
         <div class="homepage__header">
 
             <div class="homepage__header__title">
-                <h1>{{ post.meta.title }}</h1>
+                <h1>{{ post.meta.main_title }}</h1>
             </div>
 
             <div class="homepage__header__img">
@@ -24,7 +24,9 @@
 
         {# Presentation - Content #}
         <div class="homepage__presentation">
-            <p>{{ post.meta.content }}</p>
+            <div class="homepage__presentation__content">
+                {{ fn('wpautop', post.meta('content'))|raw }}
+            </div>
         </div>
 
         {# Location - Map #}
