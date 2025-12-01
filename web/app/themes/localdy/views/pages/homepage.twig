@@ -38,6 +38,11 @@
 
         {# Contact #}
         <div class="homepage__contact">
+
+            <div class="homepage__contact__title">
+                <h2>{{post.meta('form_title')}}</h2>
+            </div>
+
             <div class="homepage__contact__form">
                 {{ fn('do_shortcode', '[wpforms id="37"]') }}
             </div>
