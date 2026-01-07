@@ -8,6 +8,8 @@
 
 
     <section class="homepage">
+        {# TO DO - Rajouter un menu en header avc les différentes options
+        du menu ici puis click scroll back #}
 
         {# Header - Image & Main Title #}
         <div class="homepage__header">
@@ -20,6 +22,10 @@
                 {% set id = post.meta('header_image') %}
                 {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
             </div>
+
+        {# TO DO - rajouter bouton contacter ici position absolute
+        qui renvoie vers le form en bas de page #}
+
         </div>
 
         {# Presentation - Content #}

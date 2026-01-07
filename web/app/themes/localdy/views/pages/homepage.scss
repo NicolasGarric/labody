@@ -10,6 +10,9 @@
     height: auto;
     width: 100%;
 
+    // TO DO - Rajouter un menu avc les différentes options
+    // du menu ici puis click scroll back vers le form en bas de page
+
     &__header {
         display: flex;
         flex-direction: column;
@@ -63,6 +66,9 @@
                 overflow: hidden;
             }
         }
+
+        // TO DO - rajouter bouton contacter ici position absolute
+
     }
 
     &__presentation {
@@ -75,6 +81,10 @@
         height: auto;
 
         margin-top: 4rem;
+
+
+        // TO DO - Rajouter plusieurs contents pour chaque onglets du site
+        // que l'on retrouve en header
 
         &__content {
             display: flex;
