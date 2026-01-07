@@ -142,4 +142,26 @@
             }
         }
     }
+
+}
+
+// Confirmation email message
+.homepage__contact__form
+.wpforms-container-full
+#wpforms-confirmation-37 {
+    background-color: pink;
+    border: 1px solid violet;
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    p {
+        color: red;
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+// Admin bar
+#wpadminbar {
+    display: none;
 }
