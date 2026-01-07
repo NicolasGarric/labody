@@ -29,6 +29,10 @@
             height: auto;
             width: 60rem;
 
+            @include mixins.mobile {
+                width: 100%;
+            }
+
             h1 {
                 color: white;
 
@@ -69,7 +73,8 @@
 
         width: 100%;
         height: auto;
-        margin-top: 2rem;
+
+        margin-top: 4rem;
 
         &__content {
             display: flex;
@@ -77,6 +82,11 @@
             text-align: center;
 
             width: 50rem;
+
+            @include mixins.mobile {
+                width: 100%;
+                padding: 0rem 1rem;
+            }
         }
     }
 
@@ -86,12 +96,17 @@
         align-items: center;
 
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 6rem;
 
         &__map {
             width: 50rem;
             overflow: hidden;
             border-radius: 1rem;
+
+            @include mixins.mobile {
+                width: 100%;
+                padding: 0rem 1rem;
+            }
         }
     }
 
@@ -101,7 +116,7 @@
         align-items: center;
 
         width: 100%;
-        margin-top: 2rem;
+        margin-top: 6rem;
 
         &__homepage__contact__title {
             display: flex;
