@@ -67,6 +67,40 @@
             }
         }
 
+        &__btn {
+            display: flex;
+            position: absolute;
+            z-index: 100;
+            bottom: 18rem;
+
+            justify-content: center;
+
+            height: auto;
+            width: auto;
+
+            padding: 1rem 1.5rem;
+            border-radius: 2.8rem;
+            background: rgb(243, 243, 243);
+
+            @include mixins.mobile {
+                width: 100%;
+            }
+
+            a {
+                color: white;
+
+                text-decoration: none;
+
+                // Font
+                font-size: 3rem;
+                // Font
+
+                // TO DO - Linker ACF
+                color: red;
+
+            }
+        }
+
         // TO DO - rajouter bouton contacter ici position absolute
 
     }
@@ -151,6 +185,7 @@
         }
     }
 
+    // Contact form
     &__contact {
         display: flex;
         flex-direction: column;

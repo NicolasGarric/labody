@@ -80,7 +80,19 @@ add_action('wp_enqueue_scripts', function () {
       'localdy-app',
       $uri . '/static/css/app.css',
       [],
-      filemtime($css) // cache-busting
+      filemtime($css)
     );
   }
-}, 20); // ← ferme bien le hook et ajoute une priorité
+
+  // JS homepage : web/app/themes/localdy/views/pages/homepage.js
+  $js = $dir . '/views/pages/homepage.js';
+  if (file_exists($js)) {
+    wp_enqueue_script(
+      'localdy-homepage',
+      $uri . '/views/pages/homepage.js',
+      [],
+      filemtime($js),
+      true
+    );
+  }
+}, 20);

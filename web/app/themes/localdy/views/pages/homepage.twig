@@ -21,9 +21,10 @@
                 {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
             </div>
 
-            {# TO DO - rajouter bouton contacter ici position absolute
-            qui renvoie vers le form en bas de page #}
-
+            <div class="homepage__heading__btn">
+                {# TO DO - Linker à l'ACF #}
+                <a href="" data-scroll="contact">Nous contacter</a>
+            </div>
         </div>
 
         {# Presentation - Content #}
@@ -54,7 +55,7 @@
         </div>
 
         {# Contact #}
-        <div class="homepage__contact">
+        <div class="homepage__contact" id="contact">
 
             <div class="homepage__contact__title">
                 <h2>{{post.meta('form_title')}}</h2>
