@@ -4,24 +4,21 @@
 @use '../../static/scss/utils/mixins';
 
 .header {
-    // display: flex;
-    display: none;
-    align-items: center;
-    margin: 2rem 0rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
 
     &__container {
-            // display: flex;
-        display: none;
-        justify-content: space-between;
-        width: 100%;
+            display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-        margin: 2rem 10rem;
+    width: 100%;
+    padding: 2rem 8rem;
 
-        position: absolute;
-        top: 0rem;
-        left: 0rem;
-        z-index: 100;
-
+    background: none;
     }
 }
 

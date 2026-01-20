@@ -11,14 +11,14 @@
         {# TO DO - Rajouter un menu en header avc les différentes options
         du menu ici puis click scroll back #}
 
-        {# Header - Image & Main Title #}
-        <div class="homepage__header">
+        {# Heading - Image & Main Title #}
+        <div class="homepage__heading">
 
-            <div class="homepage__header__title">
+            <div class="homepage__heading__title">
                 <h1>{{ post.meta.main_title }}</h1>
             </div>
 
-            <div class="homepage__header__img">
+            <div class="homepage__heading__img">
                 {% set id = post.meta('header_image') %}
                 {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
             </div>
