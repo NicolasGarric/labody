@@ -108,10 +108,41 @@
         width: 100%;
         margin-top: 6rem;
 
+        &__title {
+            display: flex;
+            justify-content: center;
+
+            width: 100%;
+            height: auto;
+
+            margin-bottom: 3rem;
+
+            // TO DO - Test - a modifier + ACF
+            color: red;
+        }
+
         &__map {
             width: 50rem;
             overflow: hidden;
             border-radius: 1rem;
+
+            @include mixins.mobile {
+                width: 100%;
+                padding: 0rem 1rem;
+            }
+        }
+
+        &__content {
+            display: flex;
+            justify-content: center;
+
+            width: 50rem;
+            height: auto;
+
+            margin-top: 2rem;
+
+            // TO DO - Test - a modifier + ACF
+            color: red;
 
             @include mixins.mobile {
                 width: 100%;

@@ -40,6 +40,7 @@ button {
   width: 100%;
   padding: 2rem 8rem;
   background: none;
+  color: red;
 }
 
 .footer {
@@ -125,6 +126,14 @@ button {
   width: 100%;
   margin-top: 6rem;
 }
+.homepage__location__title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 3rem;
+  color: red;
+}
 .homepage__location__map {
   width: 50rem;
   overflow: hidden;
@@ -132,6 +141,20 @@ button {
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .homepage__location__map {
+    width: 100%;
+    padding: 0rem 1rem;
+  }
+}
+.homepage__location__content {
+  display: flex;
+  justify-content: center;
+  width: 50rem;
+  height: auto;
+  margin-top: 2rem;
+  color: red;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .homepage__location__content {
     width: 100%;
     padding: 0rem 1rem;
   }
@@ -244,4 +267,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACQ;EACR;EACA;EAEA;EACA;EAEA;;;AAIJ;EACI;EACA;EAEA;EACA;EACA;;;ACzBJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ACzBR;EDkBI;IAUQ;;;AAGJ;EACI;EAGA;EACA;EAIA;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAQZ;EACI;EACA;EAEA;EAEA;EACA;EAEA;;AAMA;EACI;EACA;EACA;EAEA;;ACtFR;EDiFI;IAQQ;IACA;;;AAKZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;;AC1GR;EDuGI;IAMQ;IACA;;;AAKZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAQhB;EAGI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;ACxKA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EAEA;EAGI;;;AAIZ;EACI;EACA;EAEA;EACA;EACA;;;AC5BJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ACzBR;EDkBI;IAUQ;;;AAGJ;EACI;EAGA;EACA;EAIA;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAQZ;EACI;EACA;EAEA;EAEA;EACA;EAEA;;AAMA;EACI;EACA;EACA;EAEA;;ACtFR;EDiFI;IAQQ;IACA;;;AAKZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EAEA;EAGA;;AAGJ;EACI;EACA;EACA;;ACvHR;EDoHI;IAMQ;IACA;;;AAIR;EACI;EACA;EAEA;EACA;EAEA;EAGA;;ACzIR;ED+HI;IAaQ;IACA;;;AAKZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAQhB;EAGI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;ACvMA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */

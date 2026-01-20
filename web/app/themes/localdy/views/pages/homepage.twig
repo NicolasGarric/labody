@@ -1,8 +1,6 @@
 {# web/app/themes/localdy/views/pages/homepage.twig #}
 {% extends "layouts/base.twig" %}
 
-
-
 {% block content %}
     {# <pre>{{ dump(post.meta) }}</pre> #}
 
@@ -23,12 +21,14 @@
                 {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
             </div>
 
-        {# TO DO - rajouter bouton contacter ici position absolute
-        qui renvoie vers le form en bas de page #}
+            {# TO DO - rajouter bouton contacter ici position absolute
+            qui renvoie vers le form en bas de page #}
 
         </div>
 
         {# Presentation - Content #}
+
+        {# Rajouter des éléments ici pour développer les onglets de content #}
         <div class="homepage__presentation">
             <div class="homepage__presentation__content">
                 {{ fn('wpautop', post.meta('content'))|raw }}
@@ -37,8 +37,19 @@
 
         {# Location - Map #}
         <div class="homepage__location">
+
+            <div class="homepage__location__title">
+                <h3>Localisez-nous !</h3>
+            </div>
+
             <div class="homepage__location__map">
                 {{ fn('do_shortcode', '[wpgmza id="1"]') }}
+            </div>
+
+            <div class="homepage__location__content">
+                Test content map ici
+                {# Copie des éléments pour récupere acf en wysiwgy #}
+                {# {{ fn('wpautop', post.meta('content'))|raw }} #}
             </div>
         </div>
 
