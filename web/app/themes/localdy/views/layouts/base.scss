@@ -23,7 +23,10 @@
         // TO DO - Test - a modifier + ACF
         color: red;
 
-        text-decoration: none;
+        a {
+            text-decoration: none;
+            color: red;
+        }
     }
 }
 

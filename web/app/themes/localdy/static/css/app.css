@@ -41,7 +41,10 @@ button {
   padding: 2rem 8rem;
   background: none;
   color: red;
+}
+.header__container a {
   text-decoration: none;
+  color: red;
 }
 
 .footer {
@@ -135,12 +138,42 @@ button {
   display: flex;
   flex-direction: column;
   text-align: center;
-  width: 50rem;
+  width: 70rem;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .homepage__presentation__content {
     width: 100%;
     padding: 0rem 1rem;
+  }
+}
+.homepage__presentation__content__title {
+  color: green;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 2rem;
+}
+.homepage__presentation__content__content {
+  color: blue;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  margin-top: 1.5rem;
+}
+.homepage__presentation__content img {
+  margin: 0.5rem 0.5rem;
+  width: 30rem;
+  height: 20rem;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .homepage__presentation__content img {
+    width: 100%;
+    height: auto;
   }
 }
 .homepage__location {
@@ -175,6 +208,7 @@ button {
   width: 50rem;
   height: auto;
   margin-top: 2rem;
+  text-align: center;
   color: red;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -291,4 +325,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EAEA;EAGA;EAEA;;;AAIR;EACI;EACA;EAEA;EACA;EACA;;;AC9BJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ACzBR;EDkBI;IAUQ;;;AAGJ;EACI;EAGA;EACA;EAIA;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;EACA;EAEA;EAEA;EACA;EAEA;EACA;EACA;;AC3ER;ED8DI;IAgBQ;;;AAGJ;EACI;EAEA;EAGA;EAIA;;AASZ;EACI;EACA;EAEA;EAEA;EACA;EAEA;;AAMA;EACI;EACA;EACA;EAEA;;ACxHR;EDmHI;IAQQ;IACA;;;AAKZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EAEA;EAGA;;AAGJ;EACI;EACA;EACA;;ACzJR;EDsJI;IAMQ;IACA;;;AAIR;EACI;EACA;EAEA;EACA;EAEA;EAGA;;AC3KR;EDiKI;IAaQ;IACA;;;AAMZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAQhB;EAGI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;AC1OA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EAEA;EAGA;;AAEA;EACI;EACA;;;AAKZ;EACI;EACA;EAEA;EACA;EACA;;;ACjCJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ACzBR;EDkBI;IAUQ;;;AAGJ;EACI;EAGA;EACA;EAIA;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EACA;EACA;EACA;EAEA;EAEA;EACA;EAEA;EACA;EACA;;AC3ER;ED8DI;IAgBQ;;;AAGJ;EACI;EAEA;EAGA;EAIA;;AASZ;EACI;EACA;EAEA;EAEA;EACA;EAEA;;AAMA;EACI;EACA;EACA;EAEA;;ACxHR;EDmHI;IAQQ;IACA;;;AAGJ;EACI;EACA;EACA;EAEA;EACA;EAEA;;AAGJ;EACI;EAEA;EACA;EAEA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;EACA;;AC3JZ;EDqJQ;IASQ;IACA;;;AAOhB;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EAEA;EAGA;;AAGJ;EACI;EACA;EACA;;AC9LR;ED2LI;IAMQ;IACA;;;AAIR;EACI;EACA;EAEA;EACA;EAEA;EAEA;EAGA;;AClNR;EDsMI;IAeQ;IACA;;;AAMZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAQhB;EAGI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;ACjRA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AASR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;EAEA;;AAEA;EACI;;AAGJ;EACI;;;AAKR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */

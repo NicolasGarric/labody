@@ -6,8 +6,6 @@
 
 
     <section class="homepage">
-        {# TO DO - Rajouter un menu en header avc les différentes options
-        du menu ici puis click scroll back #}
 
         {# Heading - Image & Main Title #}
         <div class="homepage__heading">
@@ -29,10 +27,33 @@
 
         {# Presentation - Content #}
 
-        {# Rajouter des éléments ici pour développer les onglets de content #}
         <div class="homepage__presentation">
             <div class="homepage__presentation__content">
-                {{ fn('wpautop', post.meta('content'))|raw }}
+
+                {# First part #}
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_first_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_first_part_content'))|raw }}</div>
+
+
+                {# Second part #}
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_second_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_second_part_content'))|raw }}</div>
+
+
+                {# Third part #}
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_third_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_third_part_content'))|raw }}</div>
+
+
+                {# Fourth part #}
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_fourth_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fourth_part_content'))|raw }}</div>
+
+
+                {# Fifth part #}
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_fifth_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fifth_part_content'))|raw }}</div>
+
             </div>
         </div>
 
@@ -40,7 +61,7 @@
         <div class="homepage__location">
 
             <div class="homepage__location__title">
-                <h3>Localisez-nous !</h3>
+                <h3>{{ post.meta("map_title") }}</h3>
             </div>
 
             <div class="homepage__location__map">
@@ -48,9 +69,7 @@
             </div>
 
             <div class="homepage__location__content">
-                Test content map ici
-                {# Copie des éléments pour récupere acf en wysiwgy #}
-                {# {{ fn('wpautop', post.meta('content'))|raw }} #}
+                {{ fn('wpautop', post.meta('map_content'))|raw }}
             </div>
         </div>
 

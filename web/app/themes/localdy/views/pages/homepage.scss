@@ -125,15 +125,52 @@
             flex-direction: column;
             text-align: center;
 
-            width: 50rem;
+            width: 70rem;
 
             @include mixins.mobile {
                 width: 100%;
                 padding: 0rem 1rem;
             }
+
+            &__title {
+                color: green;
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+                height: auto;
+
+                margin-top: 2rem;
+            }
+
+            &__content {
+                color: blue;
+
+                display: flex;
+                flex-direction: column;
+
+                width: 100%;
+                height: auto;
+                margin-top: 1.5rem;
+            }
+
+            img {
+                margin: .5rem .5rem;
+                width: 30rem;
+                height: 20rem;
+                overflow: hidden;
+                object-fit: cover;
+                border-radius: 2rem;
+
+                @include mixins.mobile {
+                    width: 100%;
+                    height: auto;
+                }
+            }
         }
     }
 
+    // Map
     &__location {
         display: flex;
         flex-direction: column;
@@ -174,6 +211,8 @@
             height: auto;
 
             margin-top: 2rem;
+
+            text-align: center;
 
             // TO DO - Test - a modifier + ACF
             color: red;
