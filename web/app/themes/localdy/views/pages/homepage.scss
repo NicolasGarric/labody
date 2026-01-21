@@ -69,9 +69,9 @@
 
         &__btn {
             display: flex;
-            position: absolute;
+
             z-index: 100;
-            bottom: 18rem;
+            margin-top: 24rem;
 
             justify-content: center;
 
@@ -83,7 +83,7 @@
             background: rgb(243, 243, 243);
 
             @include mixins.mobile {
-                width: 100%;
+                margin-top: 45rem;
             }
 
             a {
@@ -165,6 +165,9 @@
                 @include mixins.mobile {
                     width: 100%;
                     height: auto;
+
+                    margin: .5rem 0rem;
+
                 }
             }
         }
