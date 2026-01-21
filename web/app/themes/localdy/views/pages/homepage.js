@@ -9,8 +9,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     btns.forEach((btn) => {
         btn.addEventListener("click", (e) => {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start" });
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
+        });
+    });
+});
+
+
+// Scroll from Localisation Btn to Localisation
+document.addEventListener("DOMContentLoaded", () => {
+    const btns = document.querySelectorAll('[data-scroll="localisation"]');
+    const target = document.getElementById("localisation");
+
+    if (!btns.length || !target) return;
+
+    btns.forEach((btn) => {
+        btn.addEventListener("click", (e) => {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: "smooth", block: "start" });
         });
     });
 });
