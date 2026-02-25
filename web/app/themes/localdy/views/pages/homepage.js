@@ -1,32 +1,18 @@
 // web/app/themes/localdy/views/pages/homepage.js
 
-// Scroll from Contact Btn to Contact Form
+// Scroll function header
 document.addEventListener("DOMContentLoaded", () => {
-    const btns = document.querySelectorAll('[data-scroll="contact"]');
-    const target = document.getElementById("contact");
+    document.addEventListener("click", (e) => {
+        const link = e.target.closest("[data-scroll]");
+        if (!link) return;
 
-    if (!btns.length || !target) return;
+        const targetId = link.getAttribute("data-scroll");
+        if (!targetId) return;
 
-    btns.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
-    });
-});
+        const target = document.getElementById(targetId);
+        if (!target) return;
 
-
-// Scroll from Localisation Btn to Localisation
-document.addEventListener("DOMContentLoaded", () => {
-    const btns = document.querySelectorAll('[data-scroll="localisation"]');
-    const target = document.getElementById("localisation");
-
-    if (!btns.length || !target) return;
-
-    btns.forEach((btn) => {
-        btn.addEventListener("click", (e) => {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: "smooth", block: "start" });
-        });
+        e.preventDefault();
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
     });
 });

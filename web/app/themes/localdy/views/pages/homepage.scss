@@ -110,6 +110,7 @@
         flex-direction: column;
 
         align-items: center;
+        justify-content: center;
 
         width: 100%;
         height: auto;
@@ -123,7 +124,7 @@
         &__content {
             display: flex;
             flex-direction: column;
-            text-align: center;
+            // text-align: center;
 
             width: 70rem;
 
@@ -148,26 +149,56 @@
 
                 display: flex;
                 flex-direction: column;
+                justify-content: space-between;
 
                 width: 100%;
                 height: auto;
                 margin-top: 1.5rem;
-            }
 
-            img {
-                margin: .5rem .5rem;
-                width: 30rem;
-                height: 20rem;
-                overflow: hidden;
-                object-fit: cover;
-                border-radius: 2rem;
+                // img {
+                //     // margin: .5rem .5rem;
+                //     margin: 0 auto;
+                //     width: 30rem;
+                //     height: 20rem;
+                //     overflow: hidden;
+                //     object-fit: cover;
+                //     border-radius: 2rem;
+
+                //     @include mixins.mobile {
+                //         width: 100%;
+                //         height: auto;
+
+                //         margin: .5rem 0rem;
+                //     }
+                // }
+
+                // Img into p
+                p:has(img) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    gap: 1rem;
+                    border-radius: 2rem;
+                }
+
+                p:has(img) img {
+                    display: block;
+                    width: 30rem;
+                    height: 20rem;
+                    border-radius: 2rem;
+                    margin: 0;
+                }
 
                 @include mixins.mobile {
-                    width: 100%;
-                    height: auto;
+                    p:has(img) img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+                // Img into p
 
-                    margin: .5rem 0rem;
-
+                ul, ol {
+                    margin-left: 2rem;
                 }
             }
         }

@@ -28,32 +28,51 @@
         {# Presentation - Content #}
 
         <div class="homepage__presentation">
-            <div class="homepage__presentation__content">
-
-                {# First part #}
+            {# First part #}
+            <div class="homepage__presentation__content" id="first_part">
                 <h2 class="homepage__presentation__content__title">{{post.meta('content_first_part_title')}}</h2>
                 <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_first_part_content'))|raw }}</div>
+            </div>
 
-
-                {# Second part #}
+            {# Second part #}
+            <div class="homepage__presentation__content" id="second_part">
                 <h2 class="homepage__presentation__content__title">{{post.meta('content_second_part_title')}}</h2>
                 <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_second_part_content'))|raw }}</div>
+            </div>
 
 
-                {# Third part #}
+            {# Third part #}
+            <div class="homepage__presentation__content" id="third_part">
                 <h2 class="homepage__presentation__content__title">{{post.meta('content_third_part_title')}}</h2>
                 <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_third_part_content'))|raw }}</div>
+            </div>
 
 
-                {# Fourth part #}
+            {# Fourth part #}
+            <div class="homepage__presentation__content" id="fourth_part">
                 <h2 class="homepage__presentation__content__title">{{post.meta('content_fourth_part_title')}}</h2>
                 <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fourth_part_content'))|raw }}</div>
+            </div>
 
 
-                {# Fifth part #}
+            {# Fifth part #}
+            <div class="homepage__presentation__content" id="fifth_part">
                 <h2 class="homepage__presentation__content__title">{{post.meta('content_fifth_part_title')}}</h2>
                 <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fifth_part_content'))|raw }}</div>
+            </div>
 
+
+            {# Sixth part #}
+            <div class="homepage__presentation__content" id="sixth_part">
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_sixth_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_sixth_part_content'))|raw }}</div>
+            </div>
+
+
+            {# Seventh part #}
+            <div class="homepage__presentation__content" id="seventh_part">
+                <h2 class="homepage__presentation__content__title">{{post.meta('content_seventh_part_title')}}</h2>
+                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_seventh_part_content'))|raw }}</div>
             </div>
         </div>
 
