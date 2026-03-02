@@ -22,16 +22,32 @@
     {# Header #}
     <header class="header">
         <div class="header__container">
-            <a href="" data-scroll="first_part">Acceuil</a>
-            <a href="" data-scroll="second_part">Le laboratoire</a>
-            <a href="" data-scroll="third_part">Equipements</a>
-            <a href="" data-scroll="fourth_part">Tarifs & Réservation</a>
-            <a href="" data-scroll="fifth_part">Le quartier</a>
-            <a href="" data-scroll="sixth_part">Communauté & esprit du lieu</a>
-            <a href="" data-scroll="seventh_part">FAQ</a>
+            {% set l1 = post.meta('header_labels_label_1') %}
+            {% if l1 %}<a href="#" data-scroll="label_1">{{ l1 }}</a>{% endif %}
 
-            <a href="" data-scroll="localisation">Localisation</a>
-            <a href="" data-scroll="contact">Contact</a>
+            {% set l2 = post.meta('header_labels_label_2') %}
+            {% if l2 %}<a href="#" data-scroll="label_2">{{ l2 }}</a>{% endif %}
+
+            {% set l3 = post.meta('header_labels_label_3') %}
+            {% if l3 %}<a href="#" data-scroll="label_3">{{ l3 }}</a>{% endif %}
+
+            {% set l4 = post.meta('header_labels_label_4') %}
+            {% if l4 %}<a href="#" data-scroll="label_4">{{ l4 }}</a>{% endif %}
+
+            {% set l5 = post.meta('header_labels_label_5') %}
+            {% if l5 %}<a href="#" data-scroll="label_5">{{ l5 }}</a>{% endif %}
+
+            {% set l6 = post.meta('header_labels_label_6') %}
+            {% if l6 %}<a href="#" data-scroll="label_6">{{ l6 }}</a>{% endif %}
+
+            {% set l7 = post.meta('header_labels_label_7') %}
+            {% if l7 %}<a href="#" data-scroll="label_7">{{ l7 }}</a>{% endif %}
+
+            {% set l8 = post.meta('header_labels_label_8') %}
+            {% if l8 %}<a href="#" data-scroll="label_8">{{ l8 }}</a>{% endif %}
+
+            {% set l9 = post.meta('header_labels_label_9') %}
+            {% if l9 %}<a href="#" data-scroll="contact">{{ l9 }}</a>{% endif %}
         </div>
     </header>
 
