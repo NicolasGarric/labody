@@ -124,7 +124,7 @@
         &__content {
             display: flex;
             flex-direction: column;
-            // text-align: center;
+            padding-top: 6rem;
 
             width: 70rem;
 
@@ -141,7 +141,7 @@
                 width: 100%;
                 height: auto;
 
-                margin-top: 2rem;
+                margin-top: -2rem;
             }
 
             &__content {
