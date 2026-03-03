@@ -28,52 +28,34 @@
         {# Presentation - Content #}
 
         <div class="homepage__presentation">
-            {# First part #}
-            <div class="homepage__presentation__content" id="label_1">
-            <h2 class="homepage__presentation__content__title">{{post.meta('content_first_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_first_part_content'))|raw }}</div>
-            </div>
+            {% set parts = [
+                { id: 'label_1', title_key: 'content_first_part_title',   content_key: 'content_first_part_content' },
+                { id: 'label_2', title_key: 'content_second_part_title',  content_key: 'content_second_part_content' },
+                { id: 'label_3', title_key: 'content_third_part_title',   content_key: 'content_third_part_content' },
+                { id: 'label_4', title_key: 'content_fourth_part_title',  content_key: 'content_fourth_part_content' },
+                { id: 'label_5', title_key: 'content_fifth_part_title',   content_key: 'content_fifth_part_content' },
+                { id: 'label_6', title_key: 'content_sixth_part_title',   content_key: 'content_sixth_part_content' },
+                { id: 'label_7', title_key: 'content_seventh_part_title', content_key: 'content_seventh_part_content' }
+            ] %}
 
-            {# Second part #}
-            <div class="homepage__presentation__content" id="label_2">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_second_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_second_part_content'))|raw }}</div>
-            </div>
+            {% for part in parts %}
+                {% set title = post.meta(part.title_key) %}
+                {% set content = post.meta(part.content_key) %}
 
+                {% if title or content %}
+                    <div class="homepage__presentation__content" id="{{ part.id }}">
+                    {% if title %}
+                        <h2 class="homepage__presentation__content__title">{{ title }}</h2>
+                    {% endif %}
 
-            {# Third part #}
-            <div class="homepage__presentation__content" id="label_3">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_third_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_third_part_content'))|raw }}</div>
-            </div>
-
-
-            {# Fourth part #}
-            <div class="homepage__presentation__content" id="label_4">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_fourth_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fourth_part_content'))|raw }}</div>
-            </div>
-
-
-            {# Fifth part #}
-            <div class="homepage__presentation__content" id="label_5">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_fifth_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_fifth_part_content'))|raw }}</div>
-            </div>
-
-
-            {# Sixth part #}
-            <div class="homepage__presentation__content" id="label_6">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_sixth_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_sixth_part_content'))|raw }}</div>
-            </div>
-
-
-            {# Seventh part #}
-            <div class="homepage__presentation__content" id="label_7">
-                <h2 class="homepage__presentation__content__title">{{post.meta('content_seventh_part_title')}}</h2>
-                <div class="homepage__presentation__content__content">{{ fn('wpautop', post.meta('content_seventh_part_content'))|raw }}</div>
-            </div>
+                    {% if content %}
+                        <div class="homepage__presentation__content__content">
+                        {{ fn('wpautop', content)|raw }}
+                        </div>
+                    {% endif %}
+                    </div>
+                {% endif %}
+            {% endfor %}
         </div>
 
         {# Location - Map #}
