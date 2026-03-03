@@ -18,7 +18,7 @@
 
 // FONTS
 @mixin heading-1 {
-    color: white;
+    color: colors.$black;
 
     // Font - Rubik
     // <weight>: Use a value from 300 to 900
@@ -34,7 +34,7 @@
 }
 
 @mixin heading-2 {
-    color: white;
+    color: colors.$black;
 
     // Font - Rubik
     // <weight>: Use a value from 300 to 900
@@ -46,7 +46,7 @@
 }
 
 @mixin heading-3 {
-    color: white;
+    color: colors.$black;
 
     // Font - Rubik
     // <weight>: Use a value from 300 to 900
@@ -58,7 +58,7 @@
 }
 
 @mixin body-1 {
-    color: white;
+    color: colors.$black;
 
     // Font - Rubik
     // <weight>: Use a value from 300 to 900
@@ -69,8 +69,103 @@
     font-style: normal;
 }
 
-@mixin header-links {
 
+// CTA
+@mixin contact-cta {
+    a {
+        color: colors.$black;
+
+        text-decoration: none;
+
+        padding: 1.5rem 2.5rem;
+        border: unset;
+        border-radius: 1.5rem;
+        z-index: 1;
+        background: colors.$white;
+        position: relative;
+        font-weight: 1000;
+        -webkit-box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        transition: all 250ms;
+        overflow: hidden;
+    }
+
+    a::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 1.5rem;
+        background-color: colors.$black;
+        z-index: -1;
+        -webkit-box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        transition: all 250ms
+    }
+
+    a:hover {
+        color: colors.$white;
+    }
+
+    a:hover::before {
+        width: 100%;
+    }
+
+    @include mobile {
+        margin-top: 45rem;
+    }
+}
+
+@mixin form-btn {
+    & {
+        color: colors.$black;
+
+        text-decoration: none;
+
+        padding: 1.5rem 2.5rem;
+        border: unset;
+        border-radius: 1.5rem;
+        z-index: 1;
+        background: colors.$white;
+        position: relative;
+        -webkit-box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        transition: all 250ms;
+        overflow: hidden;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 0;
+        border-radius: 1.5rem;
+        background-color: colors.$black;
+        z-index: -1;
+        -webkit-box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        box-shadow: .4rem .8rem 1.9rem -.3rem colors.$black-shadow;
+        transition: all 250ms
+    }
+
+    &:hover {
+        color: colors.$white;
+    }
+
+    &:hover::before {
+        width: 100%;
+    }
+
+    @include mobile {
+        margin-top: 45rem;
+    }
+}
+
+// LINK
+@mixin header-links {
     // Le lien
     .header__link--underline {
         @include body-1;
@@ -82,9 +177,9 @@
         text-decoration: none;
 
         // Important : underline utilise currentColor
-        color: white;
+        color: colors.$white;
 
-        text-shadow: 0rem .2rem 1rem rgba(0,0,0,0.5);
+        text-shadow: 0rem .2rem 1rem colors.$black-shadow;
 
         // évite les zones de hover trop serrées
         padding: 0.2rem 0;

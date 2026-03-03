@@ -42,7 +42,7 @@ button {
   background: none;
 }
 .header__container .header__link--underline {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -52,8 +52,8 @@ button {
   position: relative;
   display: inline-flex;
   text-decoration: none;
-  color: white;
-  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+  color: #e8e8e8;
+  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.27);
   padding: 0.2rem 0;
 }
 .header__container .header__link__text {
@@ -86,7 +86,7 @@ button {
 }
 
 .footer {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -97,6 +97,7 @@ button {
   align-items: center;
   margin: 2rem 0rem;
   color: red;
+  background-color: #e8e8e8;
 }
 
 .homepage {
@@ -104,6 +105,7 @@ button {
   flex-direction: column;
   height: auto;
   width: 100%;
+  background-color: #e8e8e8;
 }
 .homepage__heading {
   display: flex;
@@ -127,7 +129,7 @@ button {
   }
 }
 .homepage__heading__title h1 {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 5rem;
@@ -140,7 +142,8 @@ button {
   }
 }
 .homepage__heading__title h1 {
-  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
+  color: #e8e8e8;
+  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.27);
 }
 .homepage__heading__img {
   display: flex;
@@ -164,24 +167,55 @@ button {
   justify-content: center;
   height: auto;
   width: auto;
-  padding: 1rem 1.5rem;
-  border-radius: 2.8rem;
-  background: rgb(243, 243, 243);
+  color: #212121;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
+.homepage__heading__btn a {
+  color: #212121;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  border: unset;
+  border-radius: 1.5rem;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  font-weight: 1000;
+  -webkit-box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.homepage__heading__btn a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 1.5rem;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.homepage__heading__btn a:hover {
+  color: #e8e8e8;
+}
+.homepage__heading__btn a:hover::before {
+  width: 100%;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .homepage__heading__btn {
     margin-top: 45rem;
   }
 }
-.homepage__heading__btn a {
-  color: white;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 1.5rem;
-  font-weight: 500;
-  font-style: normal;
-  text-decoration: none;
-  color: red;
+.homepage__heading__btn {
+  font-size: 2rem;
 }
 .homepage__presentation {
   display: flex;
@@ -205,13 +239,12 @@ button {
   }
 }
 .homepage__presentation__content__title {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 3.5rem;
   font-weight: 800;
   font-style: normal;
-  color: green;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -219,13 +252,12 @@ button {
   margin-top: -2rem;
 }
 .homepage__presentation__content__content {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
-  color: blue;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -264,7 +296,7 @@ button {
   margin-top: 6rem;
 }
 .homepage__location__title {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -275,7 +307,6 @@ button {
   width: 100%;
   height: auto;
   margin-bottom: 3rem;
-  color: red;
 }
 .homepage__location__map {
   width: 50rem;
@@ -289,7 +320,7 @@ button {
   }
 }
 .homepage__location__content {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -301,7 +332,6 @@ button {
   height: auto;
   margin-top: 2rem;
   text-align: center;
-  color: red;
 }
 @media (min-width: 320px) and (max-width: 1023px) {
   .homepage__location__content {
@@ -310,7 +340,7 @@ button {
   }
 }
 .homepage__contact {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -332,6 +362,11 @@ button {
 .homepage__contact__form {
   display: flex;
   flex-direction: column;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: 0.1rem #212121;
+  background-color: white;
   width: 30rem;
   height: auto;
 }
@@ -349,28 +384,28 @@ button {
 .homepage__contact__form #wpforms-37 .wpforms-field-description,
 .homepage__contact__form #wpforms-37 .wpforms-error,
 .homepage__contact__form #wpforms-37 .wpforms-required-label {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
-  color: black;
+  color: #212121;
 }
 .homepage__contact__form #wpforms-37 input,
 .homepage__contact__form #wpforms-37 textarea,
 .homepage__contact__form #wpforms-37 select {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
-  color: black;
+  color: #212121;
 }
 .homepage__contact__form #wpforms-37 input::placeholder,
 .homepage__contact__form #wpforms-37 textarea::placeholder {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
@@ -380,36 +415,88 @@ button {
   opacity: 0.7;
   font-size: 1.2rem;
 }
-.homepage__contact__form #wpforms-37 button,
 .homepage__contact__form #wpforms-37 .wpforms-submit {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
+  font-weight: 500;
+}
+.homepage__contact__form #wpforms-37 .wpforms-submit {
+  color: #212121;
+  text-decoration: none;
+  padding: 1.5rem 2.5rem;
+  border: unset;
+  border-radius: 1.5rem;
+  z-index: 1;
+  background: #e8e8e8;
+  position: relative;
+  -webkit-box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+  overflow: hidden;
+}
+.homepage__contact__form #wpforms-37 .wpforms-submit::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  border-radius: 1.5rem;
+  background-color: #212121;
+  z-index: -1;
+  -webkit-box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  box-shadow: 0.4rem 0.8rem 1.9rem -0.3rem rgba(0, 0, 0, 0.27);
+  transition: all 250ms;
+}
+.homepage__contact__form #wpforms-37 .wpforms-submit:hover {
+  color: #e8e8e8;
+}
+.homepage__contact__form #wpforms-37 .wpforms-submit:hover::before {
+  width: 100%;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .homepage__contact__form #wpforms-37 .wpforms-submit {
+    margin-top: 45rem;
+  }
+}
+.homepage__contact__form #wpforms-37 .wpforms-submit {
+  box-shadow: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .homepage__contact__form .wpforms-container-full #wpforms-confirmation-37 {
-  color: white;
+  color: #212121;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 1.5rem;
   font-weight: 500;
   font-style: normal;
   background-color: pink;
-  border: 1px solid violet;
+  border: 0.1rem solid violet;
   border-radius: 1rem;
   padding: 1.5rem;
 }
 .homepage__contact__form .wpforms-container-full #wpforms-confirmation-37 p {
-  color: red;
-  font-size: 1rem;
-  line-height: 1.6;
+  color: #212121;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #wpadminbar {
   display: none;
+}
+
+.wp-singular {
+  background-color: #e8e8e8;
 }
 
 @media (min-width: 320px) and (max-width: 1023px) {
@@ -460,4 +547,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../scss/utils/_mixins.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/utils/_colors.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%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%22,%22file%22:%22app.css%22%7D */

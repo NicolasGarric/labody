@@ -2,6 +2,7 @@
 
 @use '../../static/scss/utils/variables';
 @use '../../static/scss/utils/mixins';
+@use '../../static/scss/utils/_colors.scss';
 
 .header {
     position: fixed;
@@ -34,4 +35,6 @@
     align-items: center;
     margin: 2rem 0rem;
     color: red;
+
+    background-color: colors.$white;
 }
