@@ -37,23 +37,10 @@
             }
 
             h1 {
-                color: white;
-
-                // Font
-                font-family: "Quicksand", sans-serif;
-                font-size: 5rem;
-                // Font
-
                 // Deseign
                 text-shadow: 0rem .2rem 1rem rgba(0,0,0,0.5);
 
-                // Font - Rubik
-                // <weight>: Use a value from 300 to 900
-                font-family: "Rubik", sans-serif;
-                font-optical-sizing: auto;
-                font-size: 5rem;
-                font-weight: 900;
-                font-style: normal;
+                @include mixins.heading-1;
             }
         }
 

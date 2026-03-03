@@ -59,27 +59,6 @@ main {
 }
 
 
-.bjorg_checkbox {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-    width: 1.2rem !important;
-    height: 1.2rem !important;
-    border-radius: 0.2rem !important;
-    border: 0.15rem solid $blue !important;
-
-    transition: all 0.3s ease;
-
-    &:checked {
-        background-color: $blue !important;
-    }
-
-    &:checked::after {
-        opacity: 1;
-    }
-}
-
 
 .sr-only {
     position: absolute;
