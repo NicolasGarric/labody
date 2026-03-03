@@ -78,7 +78,7 @@
         text-decoration: none;
 
         padding: 1.5rem 2.5rem;
-        border: unset;
+        border: .2rem solid colors.$black;
         border-radius: 1.5rem;
         z-index: 1;
         background: colors.$white;
@@ -107,6 +107,8 @@
 
     a:hover {
         color: colors.$white;
+        border-color: colors.$white;
+        transition: all 250ms
     }
 
     a:hover::before {
@@ -166,63 +168,65 @@
 
 // LINK
 @mixin header-links {
-    // Le lien
-    .header__link--underline {
-        @include body-1;
-        font-size: 1.2rem;
+    // <a class="header__btn">
+    .header__btn {
+        // Variables Uiverse
+        --button_radius: 0.75em;
+        --button_color: #{colors.$white};
+        --button_outline_color: #{colors.$black};
 
-        position: relative;
+        @include body-1;
+        font-size: 1rem;
+        font-weight: 500;
+
         display: inline-flex;
+        align-items: center;
+        white-space: nowrap;
 
         text-decoration: none;
 
-        color: currentColor;
+        border: none;
+        cursor: pointer;
 
-        text-shadow: 0rem .2rem 1rem colors.$black-shadow;
+        border-radius: var(--button_radius);
+        background: var(--button_outline_color);
 
-        // évite les zones de hover trop serrées
-        padding: 0.2rem 0;
+        // IMPORTANT : pour le <a>
+        padding: 0;
+
+        // (optionnel) évite un focus moche sur certains navigateurs
+        outline: none;
     }
 
-    // Le texte (support de l'underline)
-    .header__link__text {
-        position: relative;
-        display: inline-block;
+    // <span class="header__btn__top">
+    .header__btn__top {
+        display: block;
+        box-sizing: border-box;
 
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
+        border: .2rem solid var(--button_outline_color);
+        border-radius: var(--button_radius);
 
-        padding-bottom: 0.5rem;
+        padding: .9em 1.2em;
+
+        background: var(--button_color);
+        color: var(--button_outline_color);
+
+        transform: translateY(-0.2em);
+        transition: transform 0.1s ease;
     }
 
-    // underline animé
-    .header__link__text::after {
-        content: "";
-        position: absolute;
-
-        left: 0;
-        bottom: 0;
-
-        width: 100%;
-        height: .2rem;
-
-        background: currentColor;
-
-        transform: scaleX(0);
-        transform-origin: bottom right;
-        transition: transform 0.25s ease-out;
+    .header__btn:hover .header__btn__top {
+        transform: translateY(-0.33em);
     }
 
-    // hover
-    .header__link--underline:hover .header__link__text::after {
-        transform: scaleX(1);
-        transform-origin: bottom left;
+    .header__btn:active .header__btn__top {
+        transform: translateY(0);
     }
 
-    // focus clavier (propre)
-    .header__link--underline:focus-visible {
-        outline: .2rem solid currentColor;
-        outline-offset: .6rem;
-        border-radius: 0.4rem;
+    // Focus clavier propre (accessibilité)
+    .header__btn:focus-visible {
+        outline: .2rem solid #{colors.$black};
+        outline-offset: 6px;
+        border-radius: 1rem;
     }
 }

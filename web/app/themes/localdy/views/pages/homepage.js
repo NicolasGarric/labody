@@ -19,21 +19,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 // Header Black/White switch - base.twig & base.scss
-document.addEventListener("DOMContentLoaded", () => {
-    const header = document.querySelector(".header");
-    const hero = document.querySelector(".homepage__heading");
+// document.addEventListener("DOMContentLoaded", () => {
+//     const header = document.querySelector(".header");
+//     const hero = document.querySelector(".homepage__heading");
 
-    if (!header || !hero) return;
+//     if (!header || !hero) return;
 
-    const heroHeight = hero.offsetHeight;
+//     const heroHeight = hero.offsetHeight;
 
-    window.addEventListener("scroll", () => {
-        if (window.scrollY > heroHeight - 80) {
-            header.classList.remove("header--light");
-            header.classList.add("header--dark");
-        } else {
-            header.classList.remove("header--dark");
-            header.classList.add("header--light");
-        }
-    });
-});
+//     window.addEventListener("scroll", () => {
+//         if (window.scrollY > heroHeight - 80) {
+//             header.classList.remove("header--light");
+//             header.classList.add("header--dark");
+//         } else {
+//             header.classList.remove("header--dark");
+//             header.classList.add("header--light");
+//         }
+//     });
+// });
