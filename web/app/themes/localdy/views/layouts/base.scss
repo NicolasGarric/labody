@@ -21,20 +21,8 @@
         background: none;
 
         // TO DO - Test - a modifier + ACF
-        color: pink;
 
-        a {
-            text-decoration: none;
-            color: violet;
-
-            // Font - Rubik
-            // <weight>: Use a value from 300 to 900
-            font-family: "Rubik", sans-serif;
-            font-optical-sizing: auto;
-            font-size: 1.5rem;
-            font-weight: 700;
-            font-style: normal;
-        }
+        @include mixins.header-links;
     }
 }
 

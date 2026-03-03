@@ -23,31 +23,75 @@
     <header class="header">
         <div class="header__container">
             {% set l1 = post.meta('header_labels_label_1') %}
-            {% if l1 %}<a href="#" data-scroll="label_1">{{ l1 }}</a>{% endif %}
+            {% if l1 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_1">
+                    <span class="header__link__text">{{ l1 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l2 = post.meta('header_labels_label_2') %}
-            {% if l2 %}<a href="#" data-scroll="label_2">{{ l2 }}</a>{% endif %}
+            {% if l2 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_2">
+                    <span class="header__link__text">{{ l2 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l3 = post.meta('header_labels_label_3') %}
-            {% if l3 %}<a href="#" data-scroll="label_3">{{ l3 }}</a>{% endif %}
+            {% if l3 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_3">
+                    <span class="header__link__text">{{ l3 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l4 = post.meta('header_labels_label_4') %}
-            {% if l4 %}<a href="#" data-scroll="label_4">{{ l4 }}</a>{% endif %}
+            {% if l4 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_4">
+                    <span class="header__link__text">{{ l4 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l5 = post.meta('header_labels_label_5') %}
-            {% if l5 %}<a href="#" data-scroll="label_5">{{ l5 }}</a>{% endif %}
+            {% if l5 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_5">
+                    <span class="header__link__text">{{ l5 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l6 = post.meta('header_labels_label_6') %}
-            {% if l6 %}<a href="#" data-scroll="label_6">{{ l6 }}</a>{% endif %}
+            {% if l6 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_6">
+                    <span class="header__link__text">{{ l6 }}</span>
+                </a>
+            {% endif %}
 
             {% set l7 = post.meta('header_labels_label_7') %}
-            {% if l7 %}<a href="#" data-scroll="label_7">{{ l7 }}</a>{% endif %}
+            {% if l7 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_7">
+                    <span class="header__link__text">{{ l7 }}</span>
+                </a>
+            {% endif %}
 
-            {% set l8 = post.meta('header_labels_label_8') %}
-            {% if l8 %}<a href="#" data-scroll="label_8">{{ l8 }}</a>{% endif %}
+
+            {% set l3 = post.meta('header_labels_label_3') %}
+            {% if l3 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_3">
+                    <span class="header__link__text">{{ l3 }}</span>
+                </a>
+            {% endif %}
+
 
             {% set l9 = post.meta('header_labels_label_9') %}
-            {% if l9 %}<a href="#" data-scroll="contact">{{ l9 }}</a>{% endif %}
+            {% if l9 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="contact">
+                    <span class="header__link__text">{{ l9 }}</span>
+                </a>
+            {% endif %}
+
         </div>
     </header>
 
