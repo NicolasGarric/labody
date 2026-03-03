@@ -22,68 +22,36 @@
     {# Header #}
     <header class="header header--light">
         <div class="header__container">
-            {% set l1 = post.meta('header_labels_label_1') %}
-            {% if l1 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_1">
-                    <span class="header__link__text">{{ l1 }}</span>
-                </a>
-            {% endif %}
 
-            {% set l2 = post.meta('header_labels_label_2') %}
-            {% if l2 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_2">
-                    <span class="header__link__text">{{ l2 }}</span>
-                </a>
-            {% endif %}
+        {# Labels 1 à 8 #}
+        {% set labels = [
+            { key: 'header_labels_label_1', scroll: 'label_1' },
+            { key: 'header_labels_label_2', scroll: 'label_2' },
+            { key: 'header_labels_label_3', scroll: 'label_3' },
+            { key: 'header_labels_label_4', scroll: 'label_4' },
+            { key: 'header_labels_label_5', scroll: 'label_5' },
+            { key: 'header_labels_label_6', scroll: 'label_6' },
+            { key: 'header_labels_label_7', scroll: 'label_7' },
+            { key: 'header_labels_label_8', scroll: 'label_8' }
+        ] %}
 
-            {% set l3 = post.meta('header_labels_label_3') %}
-            {% if l3 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_3">
-                    <span class="header__link__text">{{ l3 }}</span>
+        {% for item in labels %}
+            {% set label = post.meta(item.key) %}
+            {% if label %}
+                <a class="header__btn" href="#" data-scroll="{{ item.scroll }}">
+                <span class="header__btn__top">{{ label }}</span>
                 </a>
             {% endif %}
+        {% endfor %}
 
-            {% set l4 = post.meta('header_labels_label_4') %}
-            {% if l4 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_4">
-                    <span class="header__link__text">{{ l4 }}</span>
-                </a>
-            {% endif %}
+        {# Dernier lien (contact) différent #}
+        {% set contact_label = post.meta('header_labels_label_9') %}
+            {% if contact_label %}
+            <a class="header__btn header__btn--contact" href="#" data-scroll="contact">
+                <span class="header__btn__top">{{ contact_label }}</span>
+            </a>
+        {% endif %}
 
-            {% set l5 = post.meta('header_labels_label_5') %}
-            {% if l5 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_5">
-                    <span class="header__link__text">{{ l5 }}</span>
-                </a>
-            {% endif %}
-
-            {% set l6 = post.meta('header_labels_label_6') %}
-            {% if l6 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_6">
-                    <span class="header__link__text">{{ l6 }}</span>
-                </a>
-            {% endif %}
-
-            {% set l7 = post.meta('header_labels_label_7') %}
-            {% if l7 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_7">
-                    <span class="header__link__text">{{ l7 }}</span>
-                </a>
-            {% endif %}
-
-            {% set l8 = post.meta('header_labels_label_8') %}
-            {% if l8 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_8">
-                    <span class="header__link__text">{{ l8 }}</span>
-                </a>
-            {% endif %}
-
-            {% set l9 = post.meta('header_labels_label_9') %}
-            {% if l9 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="contact">
-                    <span class="header__link__text">{{ l9 }}</span>
-                </a>
-            {% endif %}
         </div>
     </header>
 
