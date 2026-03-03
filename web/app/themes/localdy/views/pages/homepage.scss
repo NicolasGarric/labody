@@ -37,10 +37,10 @@
             }
 
             h1 {
+                @include mixins.heading-1;
+
                 // Deseign
                 text-shadow: 0rem .2rem 1rem rgba(0,0,0,0.5);
-
-                @include mixins.heading-1;
             }
         }
 
@@ -82,17 +82,11 @@
             }
 
             a {
-                color: white;
-
+                @include mixins.body-1;
                 text-decoration: none;
-
-                // Font
-                font-size: 3rem;
-                // Font
 
                 // TO DO - Linker ACF
                 color: red;
-
             }
         }
 
@@ -112,10 +106,6 @@
 
         margin-top: 4rem;
 
-
-        // TO DO - Rajouter plusieurs contents pour chaque onglets du site
-        // que l'on retrouve en header
-
         &__content {
             display: flex;
             flex-direction: column;
@@ -129,6 +119,7 @@
             }
 
             &__title {
+                @include mixins.heading-2;
                 color: green;
                 display: flex;
                 flex-direction: column;
@@ -137,17 +128,10 @@
                 height: auto;
 
                 margin-top: -2rem;
-
-                            // Font - Rubik
-                // <weight>: Use a value from 300 to 900
-                font-family: "Rubik", sans-serif;
-                font-optical-sizing: auto;
-                font-size: 2rem;
-                font-weight: 600;
-                font-style: normal;
             }
 
             &__content {
+                @include mixins.body-1;
                 color: blue;
 
                 display: flex;
@@ -200,6 +184,7 @@
         margin-top: 6rem;
 
         &__title {
+            @include mixins.body-1;
             display: flex;
             justify-content: center;
 
@@ -224,6 +209,7 @@
         }
 
         &__content {
+            @include mixins.body-1;
             display: flex;
             justify-content: center;
 
@@ -246,6 +232,7 @@
 
     // Contact form
     &__contact {
+        @include mixins.body-1;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -275,6 +262,47 @@
                 margin: 0;
                 padding: 0;
             }
+
+            .wpforms-submit-container {
+                display: flex;
+                justify-content: center;
+            }
+
+            // Wrapper WPForms du formulaire 37
+            #wpforms-37 {
+
+                // Labels + descriptions
+                .wpforms-field-label,
+                .wpforms-field-description,
+                .wpforms-error,
+                .wpforms-required-label {
+                    @include mixins.body-1;
+                    color: black;
+                }
+
+                // Champs de saisie
+                input,
+                textarea,
+                select {
+                    @include mixins.body-1;
+                    color: black;
+                }
+
+                // Placeholder
+                input::placeholder,
+                textarea::placeholder {
+                    @include mixins.body-1;
+                    color: grey;
+                    opacity: 0.7;
+                    font-size: 1.2rem;
+                }
+
+                // Bouton
+                button,
+                .wpforms-submit {
+                    @include mixins.body-1;
+                }
+            }
         }
     }
 
@@ -284,6 +312,7 @@
 .homepage__contact__form
 .wpforms-container-full
 #wpforms-confirmation-37 {
+    @include mixins.body-1;
     background-color: pink;
     border: 1px solid violet;
     border-radius: 1rem;

@@ -18,7 +18,7 @@
 
 // FONTS
 @mixin heading-1 {
-    color: pink;
+    color: white;
 
     // Font - Rubik
     // <weight>: Use a value from 300 to 900
@@ -26,5 +26,45 @@
     font-optical-sizing: auto;
     font-size: 5rem;
     font-weight: 900;
+    font-style: normal;
+
+    @include mobile {
+        font-size: 4rem;
+    }
+}
+
+@mixin heading-2 {
+    color: white;
+
+    // Font - Rubik
+    // <weight>: Use a value from 300 to 900
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@mixin heading-3 {
+    color: white;
+
+    // Font - Rubik
+    // <weight>: Use a value from 300 to 900
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 3rem;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@mixin body-1 {
+    color: white;
+
+    // Font - Rubik
+    // <weight>: Use a value from 300 to 900
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    font-weight: 500;
     font-style: normal;
 }

@@ -53,6 +53,12 @@ button {
 }
 
 .footer {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -88,13 +94,20 @@ button {
   }
 }
 .homepage__heading__title h1 {
-  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
-  color: pink;
+  color: white;
   font-family: "Rubik", sans-serif;
   font-optical-sizing: auto;
   font-size: 5rem;
   font-weight: 900;
   font-style: normal;
+}
+@media (min-width: 320px) and (max-width: 1023px) {
+  .homepage__heading__title h1 {
+    font-size: 4rem;
+  }
+}
+.homepage__heading__title h1 {
+  text-shadow: 0rem 0.2rem 1rem rgba(0, 0, 0, 0.5);
 }
 .homepage__heading__img {
   display: flex;
@@ -129,8 +142,12 @@ button {
 }
 .homepage__heading__btn a {
   color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   text-decoration: none;
-  font-size: 3rem;
   color: red;
 }
 .homepage__presentation {
@@ -155,19 +172,26 @@ button {
   }
 }
 .homepage__presentation__content__title {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 3.5rem;
+  font-weight: 800;
+  font-style: normal;
   color: green;
   display: flex;
   flex-direction: column;
   width: 100%;
   height: auto;
   margin-top: -2rem;
-  font-family: "Rubik", sans-serif;
-  font-optical-sizing: auto;
-  font-size: 2rem;
-  font-weight: 600;
-  font-style: normal;
 }
 .homepage__presentation__content__content {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   color: blue;
   display: flex;
   flex-direction: column;
@@ -207,6 +231,12 @@ button {
   margin-top: 6rem;
 }
 .homepage__location__title {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   justify-content: center;
   width: 100%;
@@ -226,6 +256,12 @@ button {
   }
 }
 .homepage__location__content {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   justify-content: center;
   width: 50rem;
@@ -241,6 +277,12 @@ button {
   }
 }
 .homepage__contact {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -266,8 +308,62 @@ button {
   margin: 0;
   padding: 0;
 }
+.homepage__contact__form .wpforms-submit-container {
+  display: flex;
+  justify-content: center;
+}
+.homepage__contact__form #wpforms-37 .wpforms-field-label,
+.homepage__contact__form #wpforms-37 .wpforms-field-description,
+.homepage__contact__form #wpforms-37 .wpforms-error,
+.homepage__contact__form #wpforms-37 .wpforms-required-label {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+.homepage__contact__form #wpforms-37 input,
+.homepage__contact__form #wpforms-37 textarea,
+.homepage__contact__form #wpforms-37 select {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+}
+.homepage__contact__form #wpforms-37 input::placeholder,
+.homepage__contact__form #wpforms-37 textarea::placeholder {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+  color: grey;
+  opacity: 0.7;
+  font-size: 1.2rem;
+}
+.homepage__contact__form #wpforms-37 button,
+.homepage__contact__form #wpforms-37 .wpforms-submit {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
+}
 
 .homepage__contact__form .wpforms-container-full #wpforms-confirmation-37 {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-style: normal;
   background-color: pink;
   border: 1px solid violet;
   border-radius: 1rem;
@@ -331,4 +427,4 @@ body.modal--open {
   border: 0;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/utils/_mixins.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EAEA;EAGA;;AAEA;EACI;EACA;EAIA;EACA;EACA;EACA;EACA;;;AAKZ;EACI;EACA;EAEA;EACA;EACA;;;ACzCJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ACzBR;EDkBI;IAUQ;;;AAGJ;EAEI;ECpBZ;EAIA;EACA;EACA;EACA;EACA;;ADkBI;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EAEA;EACA;EAEA;EAEA;EACA;EAEA;EACA;EACA;;ACtER;EDyDI;IAgBQ;;;AAGJ;EACI;EAEA;EAGA;EAIA;;AASZ;EACI;EACA;EAEA;EACA;EAEA;EACA;EAEA;;AAMA;EACI;EACA;EACA;EAEA;;ACpHR;ED+GI;IAQQ;IACA;;;AAGJ;EACI;EACA;EACA;EAEA;EACA;EAEA;EAIA;EACA;EACA;EACA;EACA;;AAGJ;EACI;EAEA;EACA;EACA;EAEA;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;ACvKhB;ED2KgB;IACI;IACA;;;AAKR;EACI;;AAOhB;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;EAEA;EACA;EAEA;EAGA;;AAGJ;EACI;EACA;EACA;;AClNR;ED+MI;IAMQ;IACA;;;AAIR;EACI;EACA;EAEA;EACA;EAEA;EAEA;EAGA;;ACtOR;ED0NI;IAeQ;IACA;;;AAMZ;EACI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;;AAQhB;EAGI;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;ACrSA;ACUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AD1BJ;ECcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AAUR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
+/*# sourceMappingURL=data:application/json;charset=utf-8,%7B%22version%22:3,%22sourceRoot%22:%22%22,%22sources%22:%5B%22../scss/utils/_variables.scss%22,%22../scss/utils/_reset.scss%22,%22../../views/layouts/base.scss%22,%22../scss/utils/_mixins.scss%22,%22../../views/pages/homepage.scss%22,%22../scss/app.scss%22%5D,%22names%22:%5B%5D,%22mappings%22:%22AAIA;ACDA;EACI;AACA;;AACA;EACI;;AAJR;AAOI;EACA;EACA;;;AAGJ;EACI;;;AAIJ;EACI;EACA;;;AAGJ;EACI;EACA;;;ACtBJ;EACI;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EAEA;EAGA;;AAEA;EACI;EACA;EAIA;EACA;EACA;EACA;EACA;;;AAKZ;ECoBI;EAIA;EACA;EACA;EACA;EACA;ED1BA;EACA;EAEA;EACA;EACA;;;AE1CJ;EACI;EACA;EAEA;EACA;;AAKA;EACI;EACA;EAEA;EAEA;EACA;EACA;;AAEA;EACI;EACA;EACA;EAEA;EACA;EACA;;ADzBR;ECkBI;IAUQ;;;AAGJ;EDlBR;EAIA;EACA;EACA;EACA;EACA;;AArBA;EC+BQ;IDPJ;;;ACOI;EAII;;AAIR;EACI;EACA;EACA;EAEA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAIR;EACI;EAEA;EACA;EAEA;EAEA;EACA;EAEA;EACA;EACA;;ADtER;ECyDI;IAgBQ;;;AAGJ;EDvBR;EAIA;EACA;EACA;EACA;EACA;ECiBY;EAGA;;AAQZ;EACI;EACA;EAEA;EACA;EAEA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EAEA;;AD1GR;ECqGI;IAQQ;IACA;;;AAGJ;EDpFR;EAIA;EACA;EACA;EACA;EACA;EC8EY;EACA;EACA;EAEA;EACA;EAEA;;AAGJ;EDxER;EAIA;EACA;EACA;EACA;EACA;ECkEY;EAEA;EACA;EACA;EAEA;EACA;EACA;;AAGA;EACI;EACA;EACA;EACA;EACA;;AAGJ;EACI;EACA;EACA;EACA;EACA;;ADvJhB;EC2JgB;IACI;IACA;;;AAKR;EACI;;AAOhB;EACI;EACA;EACA;EAEA;EACA;;AAEA;ED7HJ;EAIA;EACA;EACA;EACA;EACA;ECuHQ;EACA;EAEA;EACA;EAEA;EAGA;;AAGJ;EACI;EACA;EACA;;ADnMR;ECgMI;IAMQ;IACA;;;AAIR;EDtJJ;EAIA;EACA;EACA;EACA;EACA;ECgJQ;EACA;EAEA;EACA;EAEA;EAEA;EAGA;;ADxNR;EC2MI;IAgBQ;IACA;;;AAMZ;ED7KA;EAIA;EACA;EACA;EACA;EACA;ECuKI;EACA;EACA;EAEA;EACA;;AAEA;EACI;EACA;;AAEA;EACI;;AAIR;EACI;EACA;EAEA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AAGJ;EACI;EACA;;AAOA;AAAA;AAAA;AAAA;EDtNZ;EAIA;EACA;EACA;EACA;EACA;ECmNgB;;AAIJ;AAAA;AAAA;ED/NZ;EAIA;EACA;EACA;EACA;EACA;EC2NgB;;AAIJ;AAAA;EDvOZ;EAIA;EACA;EACA;EACA;EACA;ECkOgB;EACA;EACA;;AAIJ;AAAA;EDhPZ;EAIA;EACA;EACA;EACA;EACA;;;ACmPJ;ED3PI;EAIA;EACA;EACA;EACA;EACA;ECuPA;EACA;EACA;EACA;;AAEA;EACI;EACA;EACA;;;AAKR;EACI;;;ADlUA;AEUF;;AAIF;EACI;EACA;EACA;EACA;EAEA;;AAEA;EACI;EACA;EACA;EACA;;AF1BJ;EEcJ;IAgBQ;IACA;;;;AAIR;EACI;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA;;;AAUR;EACI;EACA;EACA;EACA;EACA;EACA;EACA;EACA;EACA%22,%22file%22:%22app.css%22%7D */
