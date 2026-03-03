@@ -37,7 +37,7 @@
             width: 60rem;
 
             @include mixins.mobile {
-                width: 100%;
+                width: 80%;
             }
 
             h1 {
@@ -121,6 +121,10 @@
                 height: auto;
 
                 margin-top: -2rem;
+
+                @include mixins.mobile {
+                    margin-top: 2rem;
+                }
             }
 
             &__content {
@@ -317,9 +321,12 @@
 .wpforms-container-full
 #wpforms-confirmation-37 {
     @include mixins.body-1;
-    background-color: pink;
-    border: .1rem solid violet;
+    background-color: transparent;
+    border: none;
+
     border-radius: 1rem;
+
+    margin-bottom: 0rem;
     padding: 1.5rem;
 
     p {

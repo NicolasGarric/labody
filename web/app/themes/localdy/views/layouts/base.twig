@@ -20,7 +20,7 @@
 <body {{ function('body_class') }}>
 
     {# Header #}
-    <header class="header">
+    <header class="header header--light">
         <div class="header__container">
             {% set l1 = post.meta('header_labels_label_1') %}
             {% if l1 %}
@@ -71,10 +71,10 @@
                 </a>
             {% endif %}
 
-            {% set l3 = post.meta('header_labels_label_3') %}
-            {% if l3 %}
-                <a class="header__link header__link--underline" href="#" data-scroll="label_3">
-                    <span class="header__link__text">{{ l3 }}</span>
+            {% set l8 = post.meta('header_labels_label_8') %}
+            {% if l8 %}
+                <a class="header__link header__link--underline" href="#" data-scroll="label_8">
+                    <span class="header__link__text">{{ l8 }}</span>
                 </a>
             {% endif %}
 

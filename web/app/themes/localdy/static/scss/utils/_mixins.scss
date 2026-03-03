@@ -176,8 +176,7 @@
 
         text-decoration: none;
 
-        // Important : underline utilise currentColor
-        color: colors.$white;
+        color: currentColor;
 
         text-shadow: 0rem .2rem 1rem colors.$black-shadow;
 
