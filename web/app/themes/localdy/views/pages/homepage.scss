@@ -98,18 +98,21 @@
         width: 100%;
         height: auto;
 
-        margin-top: 4rem;
+        margin-top: 5rem;
 
         &__content {
             display: flex;
             flex-direction: column;
+
             padding-top: 6rem;
+            margin-top: 2rem;
 
             width: 70rem;
 
             @include mixins.mobile {
                 width: 100%;
                 padding: 0rem 1rem;
+                margin-top: 0rem;
             }
 
             &__title {
@@ -307,7 +310,11 @@
                     @include mixins.body-1;
                     color: colors.$grey;
                     opacity: 0.7;
-                    font-size: 1.2rem;
+                    font-size: 1rem;
+
+                    @include mixins.mobile {
+                        font-size: 1.2rem;
+                    }
                 }
 
                 // Submit button
@@ -321,6 +328,14 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                }
+
+                // Mobile btn gap
+                @include mixins.mobile {
+                    .wpforms-submit {
+                        margin-top: 0rem;
+
+                    }
                 }
             }
         }

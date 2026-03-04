@@ -21,6 +21,12 @@
         background: none;
 
         @include mixins.header-links;
+
+        @include mixins.mobile {
+            a:not(:nth-last-child(-n+2)) {
+                display: none;
+            }
+        }
     }
 }
 
