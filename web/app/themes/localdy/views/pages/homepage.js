@@ -13,6 +13,6 @@ document.addEventListener("DOMContentLoaded", () => {
         if (!target) return;
 
         e.preventDefault();
-        target.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
+        target.scrollIntoView({ behavior: "smooth", block: "center", inline: "nearest" });
     });
 });

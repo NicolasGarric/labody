@@ -10,8 +10,14 @@
         {# Heading - Image & Main Title #}
         <div class="homepage__heading">
 
-            <div class="homepage__heading__title">
-                <h1>{{ post.meta.main_title }}</h1>
+            <div class="homepage__heading__container">
+                <div class="homepage__heading__container__title">
+                    <h1>{{ post.meta.main_title }}</h1>
+                </div>
+
+                <div class="homepage__heading__container__btn">
+                    <a href="" data-scroll="contact">{{ post.meta("heading_bnt_content") }}</a>
+                </div>
             </div>
 
             <div class="homepage__heading__img">
@@ -19,10 +25,6 @@
                 {% if id %}<img src="{{ fn('wp_get_attachment_image_url', id, 'full') }}">{% endif %}
             </div>
 
-            <div class="homepage__heading__btn">
-                {# TO DO - Linker à l'ACF #}
-                <a href="" data-scroll="contact">Nous contacter</a>
-            </div>
         </div>
 
         {# Presentation - Content #}
@@ -86,5 +88,4 @@
             </div>
         </div>
     </section>
-
 {% endblock %}

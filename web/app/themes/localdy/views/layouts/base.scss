@@ -5,6 +5,10 @@
 @use '../../static/scss/utils/_colors.scss';
 
 .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     position: fixed;
     top: 0;
     left: 0;
@@ -26,6 +30,18 @@
             a:not(:nth-last-child(-n+2)) {
                 display: none;
             }
+
+            justify-content: space-between;
+            align-items: center;
+
+            width: 90%;
+            padding: 2rem 0rem;
+        }
+    }
+
+    &__btn__top {
+        @include mixins.mobile {
+            font-size: 1.5rem;
         }
     }
 }

@@ -14,8 +14,9 @@
 
     background-color: colors.$white;
 
-    // TO DO - Rajouter un menu avc les différentes options
-    // du menu ici puis click scroll back vers le form en bas de page
+    @include mixins.mobile {
+        align-items: center;
+    }
 
     &__heading {
         display: flex;
@@ -27,25 +28,56 @@
         align-items: center;
         position: relative;
 
-        &__title {
+        &__container {
             display: flex;
-            position: absolute;
-            z-index: 100;
+            flex-direction: column;
 
-            text-align: center;
-            height: auto;
-            width: 60rem;
+            justify-content: space-between;
+            align-items: center;
 
-            @include mixins.mobile {
-                width: 80%;
+            height: 35rem;
+
+            margin-top: 5rem;
+
+            &__title {
+                display: flex;
+                z-index: 100;
+
+                text-align: center;
+                height: auto;
+                width: 60rem;
+
+                @include mixins.mobile {
+                    width: 90%;
+                }
+
+                h1 {
+                    @include mixins.heading-1;
+                    color: colors.$white;
+
+                    // Deseign
+                    text-shadow: 0rem .2rem 1rem colors.$black-shadow;
+                }
             }
 
-            h1 {
-                @include mixins.heading-1;
-                color: colors.$white;
+            &__btn {
+                display: flex;
 
-                // Deseign
-                text-shadow: 0rem .2rem 1rem colors.$black-shadow;
+                z-index: 100;
+
+                justify-content: center;
+
+                height: auto;
+                width: auto;
+
+                @include mixins.body-1;
+                @include mixins.contact-cta;
+
+                font-size: 2rem;
+
+                @include mixins.mobile {
+                    margin-top: 0rem;
+                }
             }
         }
 
@@ -66,26 +98,6 @@
                 overflow: hidden;
             }
         }
-
-        &__btn {
-            display: flex;
-
-            z-index: 100;
-            margin-top: 24rem;
-
-            justify-content: center;
-
-            height: auto;
-            width: auto;
-
-            @include mixins.body-1;
-            @include mixins.contact-cta;
-
-            font-size: 2rem;
-        }
-
-        // TO DO - rajouter bouton contacter ici position absolute
-
     }
 
     &__presentation {
@@ -100,6 +112,12 @@
 
         margin-top: 5rem;
 
+        @include mixins.mobile {
+            margin-top: 3rem;
+            padding: 0rem 2rem;
+            gap: 2rem;
+        }
+
         &__content {
             display: flex;
             flex-direction: column;
@@ -111,8 +129,8 @@
 
             @include mixins.mobile {
                 width: 100%;
-                padding: 0rem 1rem;
                 margin-top: 0rem;
+                padding-top: 0rem;
             }
 
             &__title {
@@ -169,6 +187,10 @@
                 ul, ol {
                     margin-left: 2rem;
                 }
+
+                @include mixins.mobile {
+                    font-size: 1.8rem;
+                }
             }
         }
     }
@@ -185,11 +207,12 @@
 
         @include mixins.mobile {
             padding-top: 0;
-            margin-top: 0;
+            margin-top: 4rem;
+            width: 90%;
         }
 
         &__title {
-            @include mixins.body-1;
+            @include mixins.heading-2;
             display: flex;
             justify-content: center;
 
@@ -209,6 +232,8 @@
             @include mixins.mobile {
                 width: 100%;
                 padding: 0rem 1rem;
+                overflow: hidden;
+                border-radius: 1rem;
             }
         }
 
@@ -246,15 +271,15 @@
 
         @include mixins.mobile {
             padding-top: 0;
-            margin-top: 0;
+            margin-top: 4rem;
         }
 
-        &__homepage__contact__title {
+        &__title {
             display: flex;
             text-align: center;
 
             h2 {
-                font-size: 2rem;
+                @include mixins.heading-2;
             }
         }
 
@@ -268,9 +293,12 @@
             border: .1rem colors.$black;
             background-color: colors.$clear-white;
 
-
             width: 30rem;
             height: auto;
+
+            @include mixins.mobile {
+                width: 90%;
+            }
 
             .wpforms-container, .wpforms-container-full, .wpforms-render-modern {
                 width: 100%;
@@ -334,7 +362,6 @@
                 @include mixins.mobile {
                     .wpforms-submit {
                         margin-top: 0rem;
-
                     }
                 }
             }
