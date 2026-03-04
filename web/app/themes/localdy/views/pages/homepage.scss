@@ -393,7 +393,43 @@
     display: none;
 }
 
-//
+// Global page
 .wp-singular {
     background-color: colors.$white;
+}
+
+// Cookie Consent
+.cmplz-cookiebanner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    height: auto;
+    width: 30%;
+
+    @include mixins.body-1;
+
+    .cmplz-body {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .cmplz-message {
+        width: 100%;
+    }
+
+    .cmplz-buttons .cmplz-btn {
+        @include mixins.body-1;
+    }
+
+}
+
+// Cookies Mobile
+@include mixins.mobile {
+    .cmplz-cookiebanner .cmplz-message {
+        margin-right: 0 !important;
+    }
 }
